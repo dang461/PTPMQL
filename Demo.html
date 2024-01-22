@@ -2,22 +2,29 @@
 <html>
 <head>
 <style>
-.center {
-  margin: auto;
-  width: 60%;
-  border: 3px solid #73AD21;
-  padding: 10px;
+div > p {
+  background-color: yellow;
 }
 </style>
 </head>
 <body>
 <h1>Le Hai Dang - 2021050167</h1>
-<h2>Center Align Elements</h2>
-<p>To horizontally center a block element (like div), use margin: auto;</p>
+<h2>Child Selector</h2>
 
-<div class="center">
-  <p>Hello World!</p>
+<p>The child selector (>) selects all elements that are the children of a specified element.</p>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section>
+    <!-- not Child but Descendant -->
+    <p>Paragraph 3 in the div (inside a section element).</p>
+  </section>
+  <p>Paragraph 4 in the div.</p>
 </div>
+
+<p>Paragraph 5. Not in a div.</p>
+<p>Paragraph 6. Not in a div.</p>
 
 </body>
 </html>
