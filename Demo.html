@@ -2,34 +2,21 @@
 <html>
 <head>
 <style>
-/* unvisited link */
-a:link {
-  color: red;
-}
-
-/* visited link */
-a:visited {
-  color: green;
-}
-
-/* mouse over link */
-a:hover {
-  color: hotpink;
-}
-
-/* selected link */
-a:active {
-  color: blue;
-}
+a.highlight:hover {
+  color: #ff0000;
+  font-size: 22px;
+} 
 </style>
 </head>
 <body>
 <h1>Le Hai Dang - 2021050167</h1>
-<h2>Styling a link depending on state</h2>
+<h2>Pseudo-classes and HTML Classes</h2>
 
-<p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
-<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
-<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+<p>When you hover over the first link below, it will change color and font size:</p>
+
+<p><a class="highlight" href="css_syntax.asp">CSS Syntax</a></p>
+
+<p><a href="default.asp">CSS Tutorial</a></p>
 
 </body>
 </html>
